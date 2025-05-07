@@ -26,11 +26,11 @@ if ($device == "windows") {
     echo "使用OSは、windowsです。";
 }
 
-else if ($device == "mac") {
+if ($device == "mac") {
     echo "使用OSは、macです。";
 }
 
-else {
+if ($device != "windows" && $device != "mac") {
     echo "どちらでもありません。";
 }
 
