@@ -20,18 +20,14 @@ $currentDateTime = date("Y年m月d日 H時i分s秒");
 
 
 // Q4 条件分岐-1 if文
-$device = "mac";
+$device = "windows";
 
-if ($device == "windows") {
-    echo "使用OSは、windowsです。";
-}
+if ($device == "mac" || $device == "windows") {
+    echo '使用OSは、'.$device .'です。';
+    
+} else {
+    echo 'どちらでもありません';
 
-if ($device == "mac") {
-    echo "使用OSは、macです。";
-}
-
-if ($device != "windows" && $device != "mac") {
-    echo "どちらでもありません。";
 }
 
 
